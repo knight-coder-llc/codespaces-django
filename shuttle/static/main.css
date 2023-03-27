@@ -43,3 +43,7 @@ body {
   .small {
     font-size: 0.75rem;
   }
+
+ .hero {
+    background: #5B5BFF;
+  }

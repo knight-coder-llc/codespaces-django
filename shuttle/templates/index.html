@@ -2,23 +2,47 @@
 {% load static %}
 
 <!doctype html>
-<html>
+<html class="has-background-light">
 
 <head>
     <title>{{ title }}</title>
     <link rel="stylesheet" href="{% static 'main.css' %}">
-
-<body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{% static 'Octocat.png' %}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Django
-            </p>
-            <p class="small">
-                Edit <code>hello_world/templates/index.html</code> and see changes live!
-            </p>
-        </header>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body >
+    <div class="container">
+        <section class="hero is-small is-link">
+            <div class="hero-body">
+              <p class="title">
+                Shuttle
+              </p>
+              <p class="subtitle">
+                we're going places
+              </p>
+            </div>
+          </section>
+          <section class="box has-background-black">
+                <div class="column is-offset-one-fifth is-three-fifths">
+                    <form class="box has-background-black">
+                        <div class="field">
+                          <label class="label has-text-primary-light">Email</label>
+                          <div class="control">
+                            <input class="input" type="email" placeholder="e.g. alex@example.com">
+                          </div>
+                        </div>
+                      
+                        <div class="field">
+                          <label class="label has-text-primary-light">Password</label>
+                          <div class="control">
+                            <input class="input" type="password" placeholder="********">
+                          </div>
+                        </div>
+                      
+                        <button class="button is-primary">Login</button>
+                      </form>
+                  </section>
+                </div>
+            </div>
     </div>
 </body>
 
